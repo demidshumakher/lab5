@@ -1,4 +1,4 @@
-<ru.ifmo.se.collectionManager.CollectionManager_-Wrapper>
+<DB>
   <collection>
     <music__band>
       <id>1</id>
@@ -66,6 +66,270 @@
         </location>
       </frontMan>
     </music__band>
+    <music__band>
+      <id>4</id>
+      <name>NewName</name>
+      <coordinates>
+        <x>2</x>
+        <y>2.0</y>
+      </coordinates>
+      <creationDate>2025-04-21 14:23:08.75 UTC</creationDate>
+      <numberOfParticipants>11</numberOfParticipants>
+      <genre>POST_ROCK</genre>
+      <frontMan>
+        <name>Gosha</name>
+        <birthday>2020-12-03T10:15:00+03:00[Europe/Moscow]</birthday>
+        <passportID>123456789</passportID>
+        <eyeColor>BLUE</eyeColor>
+        <location>
+          <x>2.0</x>
+          <y>2.0</y>
+          <z>2</z>
+        </location>
+      </frontMan>
+    </music__band>
+    <music__band>
+      <id>5</id>
+      <name>Name</name>
+      <coordinates>
+        <x>1</x>
+        <y>1.0</y>
+      </coordinates>
+      <creationDate>2025-04-21 20:01:46.189 UTC</creationDate>
+      <numberOfParticipants>1</numberOfParticipants>
+      <genre>ROCK</genre>
+      <frontMan>
+        <name>name</name>
+        <birthday>2006-05-28T10:11:00+04:00[Europe/Moscow]</birthday>
+        <passportID>1122334455</passportID>
+        <eyeColor>BLUE</eyeColor>
+        <location>
+          <x>1.0</x>
+          <y>1.0</y>
+          <z>1</z>
+        </location>
+      </frontMan>
+    </music__band>
+    <music__band>
+      <id>6</id>
+      <name>Nirvana</name>
+      <coordinates>
+        <x>2</x>
+        <y>3.0</y>
+      </coordinates>
+      <creationDate>2025-04-21 20:04:18.901 UTC</creationDate>
+      <numberOfParticipants>3</numberOfParticipants>
+      <genre>POST_PUNK</genre>
+      <frontMan>
+        <name>Kurt Cobain</name>
+        <birthday>1967-02-20T12:00:00+03:00[Europe/Moscow]</birthday>
+        <passportID>12345678910</passportID>
+        <eyeColor>BLACK</eyeColor>
+        <location>
+          <x>1.0</x>
+          <y>2.0</y>
+          <z>3</z>
+        </location>
+      </frontMan>
+    </music__band>
+    <music__band>
+      <id>7</id>
+      <name>Metallica</name>
+      <coordinates>
+        <x>5</x>
+        <y>6.0</y>
+      </coordinates>
+      <creationDate>2025-04-21 20:04:18.903 UTC</creationDate>
+      <numberOfParticipants>4</numberOfParticipants>
+      <genre>ROCK</genre>
+      <frontMan>
+        <name>James Hetfield</name>
+        <birthday>1963-08-03T12:00:00+03:00[Europe/Moscow]</birthday>
+        <passportID>98765432100</passportID>
+        <eyeColor>RED</eyeColor>
+        <location>
+          <x>4.0</x>
+          <y>5.0</y>
+          <z>6</z>
+        </location>
+      </frontMan>
+    </music__band>
+    <music__band>
+      <id>8</id>
+      <name>Pink Floyd</name>
+      <coordinates>
+        <x>7</x>
+        <y>8.0</y>
+      </coordinates>
+      <creationDate>2025-04-21 20:04:18.905 UTC</creationDate>
+      <numberOfParticipants>5</numberOfParticipants>
+      <genre>POST_ROCK</genre>
+      <frontMan>
+        <name>David Gilmour</name>
+        <birthday>1946-03-06T12:00:00+03:00[Europe/Moscow]</birthday>
+        <passportID>11223344556</passportID>
+        <eyeColor>BLUE</eyeColor>
+        <location>
+          <x>7.0</x>
+          <y>8.0</y>
+          <z>9</z>
+        </location>
+      </frontMan>
+    </music__band>
+    <music__band>
+      <id>9</id>
+      <name>The Beatles</name>
+      <coordinates>
+        <x>9</x>
+        <y>10.0</y>
+      </coordinates>
+      <creationDate>2025-04-21 20:04:18.906 UTC</creationDate>
+      <numberOfParticipants>4</numberOfParticipants>
+      <genre>ROCK</genre>
+      <frontMan>
+        <name>John Lennon</name>
+        <birthday>1940-10-09T12:00:00+03:00[Europe/Moscow]</birthday>
+        <passportID>33445566778</passportID>
+        <eyeColor>BLACK</eyeColor>
+        <location>
+          <x>10.0</x>
+          <y>11.0</y>
+          <z>12</z>
+        </location>
+      </frontMan>
+    </music__band>
+    <music__band>
+      <id>10</id>
+      <name>Radiohead</name>
+      <coordinates>
+        <x>12</x>
+        <y>13.0</y>
+      </coordinates>
+      <creationDate>2025-04-21 20:04:18.907 UTC</creationDate>
+      <numberOfParticipants>5</numberOfParticipants>
+      <genre>POST_ROCK</genre>
+      <frontMan>
+        <name>Thom Yorke</name>
+        <birthday>1968-10-07T12:00:00+03:00[Europe/Moscow]</birthday>
+        <passportID>44556677889</passportID>
+        <eyeColor>BLUE</eyeColor>
+        <location>
+          <x>13.0</x>
+          <y>14.0</y>
+          <z>15</z>
+        </location>
+      </frontMan>
+    </music__band>
+    <music__band>
+      <id>11</id>
+      <name>Arctic Monkeys</name>
+      <coordinates>
+        <x>15</x>
+        <y>16.0</y>
+      </coordinates>
+      <creationDate>2025-04-21 20:04:18.909 UTC</creationDate>
+      <numberOfParticipants>4</numberOfParticipants>
+      <genre>ROCK</genre>
+      <frontMan>
+        <name>Alex Turner</name>
+        <birthday>1986-01-06T12:00:00+03:00[Europe/Moscow]</birthday>
+        <passportID>55667788990</passportID>
+        <eyeColor>RED</eyeColor>
+        <location>
+          <x>16.0</x>
+          <y>17.0</y>
+          <z>18</z>
+        </location>
+      </frontMan>
+    </music__band>
+    <music__band>
+      <id>12</id>
+      <name>Joy Division</name>
+      <coordinates>
+        <x>18</x>
+        <y>19.0</y>
+      </coordinates>
+      <creationDate>2025-04-21 20:04:18.910 UTC</creationDate>
+      <numberOfParticipants>4</numberOfParticipants>
+      <genre>POST_PUNK</genre>
+      <frontMan>
+        <name>Ian Curtis</name>
+        <birthday>1956-07-15T12:00:00+03:00[Europe/Moscow]</birthday>
+        <passportID>66778899001</passportID>
+        <eyeColor>BLACK</eyeColor>
+        <location>
+          <x>19.0</x>
+          <y>20.0</y>
+          <z>21</z>
+        </location>
+      </frontMan>
+    </music__band>
+    <music__band>
+      <id>13</id>
+      <name>Queen</name>
+      <coordinates>
+        <x>21</x>
+        <y>22.0</y>
+      </coordinates>
+      <creationDate>2025-04-21 20:04:18.916 UTC</creationDate>
+      <numberOfParticipants>4</numberOfParticipants>
+      <genre>ROCK</genre>
+      <frontMan>
+        <name>Freddie Mercury</name>
+        <birthday>1946-09-05T12:00:00+03:00[Europe/Moscow]</birthday>
+        <passportID>77889900112</passportID>
+        <eyeColor>ORANGE</eyeColor>
+        <location>
+          <x>22.0</x>
+          <y>23.0</y>
+          <z>24</z>
+        </location>
+      </frontMan>
+    </music__band>
+    <music__band>
+      <id>14</id>
+      <name>The Smiths</name>
+      <coordinates>
+        <x>24</x>
+        <y>25.0</y>
+      </coordinates>
+      <creationDate>2025-04-21 20:04:18.918 UTC</creationDate>
+      <numberOfParticipants>4</numberOfParticipants>
+      <genre>POST_PUNK</genre>
+      <frontMan>
+        <name>Morrissey</name>
+        <birthday>1959-05-22T12:00:00+03:00[Europe/Moscow]</birthday>
+        <passportID>88990011223</passportID>
+        <eyeColor>BLUE</eyeColor>
+        <location>
+          <x>25.0</x>
+          <y>26.0</y>
+          <z>27</z>
+        </location>
+      </frontMan>
+    </music__band>
+    <music__band>
+      <id>15</id>
+      <name>Massive Attack</name>
+      <coordinates>
+        <x>27</x>
+        <y>28.0</y>
+      </coordinates>
+      <creationDate>2025-04-21 20:04:18.921 UTC</creationDate>
+      <numberOfParticipants>3</numberOfParticipants>
+      <genre>JAZZ</genre>
+      <frontMan>
+        <name>Robert Del Naja</name>
+        <birthday>1965-01-21T12:00:00+03:00[Europe/Moscow]</birthday>
+        <passportID>99001122334</passportID>
+        <eyeColor>RED</eyeColor>
+        <location>
+          <x>28.0</x>
+          <y>29.0</y>
+          <z>30</z>
+        </location>
+      </frontMan>
+    </music__band>
   </collection>
   <initializationDate>2025-04-20T22:18:03.759630736</initializationDate>
-</ru.ifmo.se.collectionManager.CollectionManager_-Wrapper>
+</DB>

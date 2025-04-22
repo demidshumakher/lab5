@@ -3,12 +3,26 @@ package ru.ifmo.se.commands;
 import ru.ifmo.se.utils.IOManagers.IOManager;
 import java.io.IOException;
 
+/**
+ * Command that displays help information about all available commands.
+ * This command does not require any arguments.
+ */
 public class HelpCommand extends Command {
+    /**
+     * Constructs a new HelpCommand with the name "help" and appropriate description.
+     */
     public HelpCommand() {
         super("help", "выводит справку по доступным командам");
     }
 
-
+    /**
+     * Executes the help command, displaying information about all available commands.
+     * 
+     * @param ioManager the IO manager to use for output
+     * @param arguments command arguments (not used for this command)
+     * @return true if the command was executed successfully
+     * @throws IOException if an I/O error occurs
+     */
     @Override
     public boolean execute(IOManager ioManager, String[] arguments) throws IOException {
         ioManager.writeln("""
