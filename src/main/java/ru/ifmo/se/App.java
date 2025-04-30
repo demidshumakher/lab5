@@ -32,7 +32,7 @@ public class App {
         }
 
         File file = new File(filename);
-        FileReader db;
+        InputStreamReader db;
         CollectionManager collectionManager;
 
         try {

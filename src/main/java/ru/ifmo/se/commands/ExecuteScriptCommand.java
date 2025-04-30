@@ -8,10 +8,7 @@ import ru.ifmo.se.runner.Runner;
 import ru.ifmo.se.utils.IOManagers.IOManager;
 import ru.ifmo.se.utils.IOManagers.FileIOManager;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
+import java.io.*;
 import java.util.HashSet;
 import java.util.Set;
 
