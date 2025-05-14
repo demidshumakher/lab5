@@ -1,5 +1,10 @@
 package ru.ifmo.se.models;
 
+/**
+ * Класс, представляющий местоположение в пространстве.
+ * Содержит координаты X и Y, а также название местоположения.
+ * Реализует интерфейс Validatable для проверки валидности данных.
+ */
 
 public class Location implements Validatable {
     private Double x; //Поле не может быть null

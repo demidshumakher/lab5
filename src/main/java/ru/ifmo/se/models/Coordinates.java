@@ -1,5 +1,9 @@
 package ru.ifmo.se.models;
 
+/**
+ * Класс, представляющий координаты объекта в двумерном пространстве.
+ * Содержит координаты X и Y с ограничениями на их значения.
+ */
 
 public class Coordinates implements Validatable {
     private Integer x; //Поле не может быть null
