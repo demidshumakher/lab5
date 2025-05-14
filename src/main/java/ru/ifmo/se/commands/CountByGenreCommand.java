@@ -50,5 +50,4 @@ public class CountByGenreCommand extends Command {
         ioManager.write("Количество групп с жанром " + genre + ": " + count + "\n");
         return true;
     }
-
 }

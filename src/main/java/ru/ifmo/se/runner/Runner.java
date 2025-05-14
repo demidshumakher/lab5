@@ -8,6 +8,7 @@ import ru.ifmo.se.exceptions.WrongAmountOfArguments;
 import ru.ifmo.se.exceptions.WrongInputException;
 import ru.ifmo.se.utils.IOManagers.IOManager;
 
+import java.io.EOFException;
 import java.io.IOException;
 import java.util.List;
 
@@ -70,6 +71,6 @@ public class Runner {
                 ioManager.writeln("Неверный ввод " + e.getMessage());
             }
         }
-        ioManager.writeln("\n{EOF}");
+        throw new EOFException();
     }
 }

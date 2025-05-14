@@ -3,3 +3,4 @@ help
 show
 remove_by_id 4
 execute_script script2
+execute_script s

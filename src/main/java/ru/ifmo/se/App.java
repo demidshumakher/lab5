@@ -32,23 +32,20 @@ public class App {
         }
 
         File file = new File(filename);
-        InputStreamReader db;
         CollectionManager collectionManager;
 
         try {
             if (!file.exists()) {
                 System.out.println("Файл не найден, создаем новый файл: " + filename);
                 file.createNewFile();
-
                 collectionManager = new CollectionManager();
-
                 try (FileWriter writer = new FileWriter(file)) {
                     collectionManager.serialize(writer);
                 }
             } else {
-                db = new FileReader(filename);
-                collectionManager = CollectionManager.deserialize(db);
-                db.close();
+                try (InputStreamReader db = new FileReader(filename) ) {
+                    collectionManager = CollectionManager.deserialize(db);
+                }
             }
         } catch (Exception e) {
             System.out.println(e.getMessage() + "\nЗавершение работы");
@@ -81,8 +78,10 @@ public class App {
         while (true) {
             try {
                 runner.run();
-            } catch (IOException e) {
+            } catch (EOFException e) {
                 System.out.println("{Для выхода используйте команду exit}");
+            } catch (IOException e) {
+                System.out.println("{Ошибка " + e.getMessage() + "}");
             }
         }
 

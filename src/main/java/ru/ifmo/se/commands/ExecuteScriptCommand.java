@@ -80,6 +80,7 @@ public class ExecuteScriptCommand extends Command {
 
         try {
             runner.run();
+        } catch (EOFException ignore) {
         } catch (IOException e) {
             ioManager.writeln("Ошибка ввода вывода с файла " + e.getMessage());
         }
