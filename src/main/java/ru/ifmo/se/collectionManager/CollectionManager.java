@@ -228,8 +228,7 @@ public class CollectionManager {
      * @return true if the collection is valid, false otherwise
      */
     public boolean isValid() {
-        boolean validCollection = this.getItems().anyMatch(MusicBand::isValid);
-
+        boolean validCollection = this.getItems().allMatch(MusicBand::isValid);
         return this.collection != null && this.initializationDate != null && validCollection;
     }
 
@@ -252,7 +251,6 @@ public class CollectionManager {
         if (collectionManager.isValid()) {
             return collectionManager;
         }
-
         throw new WrongInputException("Некорректные данные в файле");
     }
 
