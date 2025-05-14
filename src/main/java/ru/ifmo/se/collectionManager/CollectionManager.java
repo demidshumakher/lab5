@@ -2,6 +2,8 @@ package ru.ifmo.se.collectionManager;
 
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.annotations.XStreamImplicit;
+import com.thoughtworks.xstream.io.xml.DomDriver;
+import com.thoughtworks.xstream.io.xml.StaxDriver;
 import ru.ifmo.se.exceptions.WrongInputException;
 import ru.ifmo.se.models.Color;
 import ru.ifmo.se.models.Coordinates;

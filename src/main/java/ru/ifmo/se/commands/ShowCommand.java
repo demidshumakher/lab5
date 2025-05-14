@@ -43,7 +43,7 @@ public class ShowCommand extends Command {
         ioManager.write("Collection{ ");
 
         for (var item : this.collectionManager.getItems().toList()) {
-            ioManager.write(item + "\n");
+            ioManager.write(item + ",\n");
         }
 
         ioManager.writeln("}");

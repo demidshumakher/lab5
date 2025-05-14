@@ -66,17 +66,15 @@ public class App {
         commandManager.register("remove_by_id", new RemoveByIdCommand(collectionManager));
         commandManager.register("clear", new ClearCommand(collectionManager));
         commandManager.register("exit", new ExitCommand());
-        commandManager.register("remove_at_index", new RemoveAtIndexCommand(collectionManager));
+        commandManager.register("remove_at", new RemoveAtIndexCommand(collectionManager));
         commandManager.register("remove_last", new RemoveLastCommand(collectionManager));
         commandManager.register("count_by_genre", new CountByGenreCommand(collectionManager));
         commandManager.register("filter_starts_with_name", new FilterStartsWithNameCommand(collectionManager));
         commandManager.register("filter_less_than_number_of_participants", new FilterLessThanNumberOfParticipantsCommand(collectionManager));
-        commandManager.register("update_by_id", new UpdateByIdCommand(collectionManager));
+        commandManager.register("update", new UpdateByIdCommand(collectionManager));
         commandManager.register("save", new SaveCommand(collectionManager, filename));
         commandManager.register("add_if_max", new AddIfMaxCommand(collectionManager, new MusicBandCreationDateComparator()));
         commandManager.register("execute_script", new ExecuteScriptCommand(collectionManager, commandManager, new HashSet<>()));
-
-        // todo filter
 
         Runner runner = new Runner(ioManager, commandManager);
 

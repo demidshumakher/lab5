@@ -52,7 +52,7 @@ public class FilterLessThanNumberOfParticipantsCommand extends Command {
         for (var item : collectionManager.getItems()
                 .filter(element -> element.getNumberOfParticipants() < number)
                 .toList()) {
-            ioManager.write(item + ", ");
+            ioManager.write(item + ",\n");
         }
         ioManager.writeln("}");
 

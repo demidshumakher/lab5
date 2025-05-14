@@ -46,7 +46,7 @@ public class FilterStartsWithNameCommand extends Command {
 
         for (var item : this.collectionManager.getItems()
                 .filter(element -> element.getName().startsWith(name)).toList()) {
-            ioManager.write(item + ", ");
+            ioManager.write(item + ",\n");
         }
         ioManager.writeln("}");
         return true;

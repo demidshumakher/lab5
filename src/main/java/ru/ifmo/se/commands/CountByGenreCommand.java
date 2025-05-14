@@ -2,6 +2,7 @@ package ru.ifmo.se.commands;
 
 import ru.ifmo.se.collectionManager.CollectionManager;
 import ru.ifmo.se.exceptions.WrongAmountOfArguments;
+import ru.ifmo.se.exceptions.WrongInputException;
 import ru.ifmo.se.models.MusicGenre;
 import ru.ifmo.se.utils.IOManagers.IOManager;
 
@@ -35,11 +36,16 @@ public class CountByGenreCommand extends Command {
      * @throws IOException if an I/O error occurs
      */
     @Override
-    public boolean execute(IOManager ioManager, String[] arguments) throws WrongAmountOfArguments, IOException {
+    public boolean execute(IOManager ioManager, String[] arguments) throws WrongInputException, WrongAmountOfArguments, IOException {
         if (arguments.length != 2) {
             throw new WrongAmountOfArguments();
         }
-        MusicGenre genre = MusicGenre.valueOf(arguments[1].toUpperCase());
+        MusicGenre genre;
+        try {
+            genre = MusicGenre.valueOf(arguments[1].toUpperCase());
+        } catch (IllegalArgumentException e) {
+            throw new WrongInputException("неизвестный жанр");
+        }
         long count = collectionManager.getItems().filter(element -> element.getGenre().equals(genre)).count();
         ioManager.write("Количество групп с жанром " + genre + ": " + count + "\n");
         return true;

@@ -5,6 +5,7 @@ import ru.ifmo.se.models.Color;
 import ru.ifmo.se.utils.IOManagers.IOManager;
 
 import java.io.IOException;
+import java.util.Optional;
 
 
 public class ColorForm extends Form<Color> {
@@ -13,13 +14,21 @@ public class ColorForm extends Form<Color> {
         super(ioManager);
     }
 
-    public Color get() throws WrongInputException, IOException {
-        return switch (this.ioManager.readLine("Введите цвет (red, black, blue, orange): ").toLowerCase()) {
-            case "red" -> Color.RED;
-            case "black" -> Color.BLACK;
-            case "blue" -> Color.BLUE;
-            case "orange" -> Color.ORANGE;
-            default -> throw new WrongInputException("Введен неизвестный цвет");
-        };
+    public Color get() throws IOException {
+        Optional<Color> res = Optional.empty();
+        while (res.isEmpty()) {
+            res = switch (this.ioManager.readLine("Введите цвет (red, black, blue, orange): ").toLowerCase()) {
+                case "red" -> Optional.of(Color.RED);
+                case "black" -> Optional.of(Color.BLACK);
+                case "blue" -> Optional.of(Color.BLUE);
+                case "orange" -> Optional.of(Color.ORANGE);
+                default -> Optional.empty();
+            };
+            if (res.isEmpty()) {
+                this.ioManager.writeln("Введен неизвестный цвет");
+            }
+        }
+
+        return res.get();
     }
 }
