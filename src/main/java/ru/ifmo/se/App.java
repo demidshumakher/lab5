@@ -3,14 +3,12 @@ package ru.ifmo.se;
 import ru.ifmo.se.collectionManager.CollectionManager;
 import ru.ifmo.se.commandManager.CommandManager;
 import ru.ifmo.se.commands.*;
-import ru.ifmo.se.exceptions.WrongInputException;
 import ru.ifmo.se.models.comporators.MusicBandCreationDateComparator;
 import ru.ifmo.se.runner.Runner;
 import ru.ifmo.se.utils.IOManagers.BaseIOManager;
 import ru.ifmo.se.utils.IOManagers.IOManager;
 
 import java.io.*;
-import java.util.Arrays;
 import java.util.HashSet;
 
 /**
