@@ -21,10 +21,11 @@ public class DoubleForm extends Form<Double> {
         while (x.isEmpty()) {
             try {
                 x = Optional.of(Double.parseDouble(ioManager.readLine("Введите " + name + ": ")));
-            } catch (NumberFormatException e) {
+            } catch (NumberFormatException | NullPointerException e) {
                 ioManager.writeln("Число введено не верно");
                 continue;
             }
+
             if (!this.check.isValid(x.get())) {
                 ioManager.writeln(this.check.description());
                 x = Optional.empty();

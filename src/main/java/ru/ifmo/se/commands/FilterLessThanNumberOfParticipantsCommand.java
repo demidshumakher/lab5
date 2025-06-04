@@ -22,7 +22,7 @@ public class FilterLessThanNumberOfParticipantsCommand extends Command {
      * @param collectionManager the collection manager to operate on
      */
     public FilterLessThanNumberOfParticipantsCommand(CollectionManager collectionManager) {
-        super("filter less than number of participants", "вывести элементы, значение поля numberOfParticipants которых меньше заданного");
+        super("filter_less_than_number_of_participants [number]", "вывести элементы, значение поля numberOfParticipants которых меньше заданного");
         this.collectionManager = collectionManager;
     }
 
@@ -48,13 +48,11 @@ public class FilterLessThanNumberOfParticipantsCommand extends Command {
         } catch (NumberFormatException e) {
             throw new WrongInputException("Число введено не верно");
         }
-        ioManager.write("Result{ ");
         for (var item : collectionManager.getItems()
                 .filter(element -> element.getNumberOfParticipants() < number)
                 .toList()) {
-            ioManager.write(item + ",\n");
+            ioManager.write(item + "\n\n");
         }
-        ioManager.writeln("}");
 
         return true;
     }

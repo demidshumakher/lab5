@@ -10,6 +10,7 @@ import java.util.Optional;
 public class StringForm extends Form<String> {
     Validator<String> check;
     String name;
+
     public StringForm(IOManager ioManager, Validator<String> check, String name) {
         super(ioManager);
         this.check = check;
@@ -19,8 +20,8 @@ public class StringForm extends Form<String> {
     public String get() throws IOException {
         Optional<String> x = Optional.empty();
         while (x.isEmpty()) {
-            x = Optional.of(ioManager.readLine("Введите " + name + ": "));
-            if (!this.check.isValid(x.get())) {
+            x = Optional.ofNullable(ioManager.readLine("Введите " + name + ": "));
+            if (x.isEmpty() || !this.check.isValid(x.get())) {
                 ioManager.writeln(this.check.description());
                 x = Optional.empty();
             }

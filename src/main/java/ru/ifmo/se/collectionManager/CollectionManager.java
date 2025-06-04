@@ -71,6 +71,13 @@ public class CollectionManager {
         return false;
     }
 
+    public boolean idExists(int id) {
+        MusicBand temp = this.collection.stream().filter(item -> item.getId() == id).findFirst().orElse(null);
+        return temp != null;
+    }
+
+
+
     /**
      * Removes a specific music band from the collection.
      * 
@@ -87,7 +94,7 @@ public class CollectionManager {
      */
     public void removeById(int id) {
         this.collection.stream().filter(item -> item.getId() == id).findFirst()
-                .ifPresent(this::removeElement);
+                .ifPresentOrElse(this::removeElement, () -> {throw new IndexOutOfBoundsException("неизвестный id");});
     }
 
     /**
@@ -102,19 +109,21 @@ public class CollectionManager {
      * 
      * @param index the index of the music band to remove
      */
-    public boolean removeAtIndex(int index) {
+    public void removeAtIndex(int index) {
         if (index < 0 || index >= this.collection.size()) {
-            return false;
+            throw new IndexOutOfBoundsException("элемент с таким индексом не существует");
         }
         this.collection.remove(index);
-        return true;
     }
 
     /**
      * Removes the last music band from the collection.
      */
-    public boolean removeLast() {
-        return this.removeAtIndex(this.collection.size()-1);
+    public void removeLast() {
+        if (this.collection.isEmpty()) {
+            throw new IndexOutOfBoundsException("коллекция пуста");
+        }
+        this.removeAtIndex(this.collection.size()-1);
     }
 
     /**

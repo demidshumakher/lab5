@@ -21,7 +21,7 @@ public class FilterStartsWithNameCommand extends Command {
      * @param collectionManager the collection manager to operate on
      */
     public FilterStartsWithNameCommand(CollectionManager collectionManager) {
-        super("Filter starts with name", "вывести элементы, значение поля name которых начинается с заданной подстроки");
+        super("filter_starts_with_name [name]", "вывести элементы, значение поля name которых начинается с заданной подстроки");
         this.collectionManager = collectionManager;
     }
 
@@ -42,13 +42,11 @@ public class FilterStartsWithNameCommand extends Command {
         }
         String name = arguments[1];
         System.out.println("name: " + name);
-        ioManager.write("Result{ ");
 
         for (var item : this.collectionManager.getItems()
                 .filter(element -> element.getName().startsWith(name)).toList()) {
-            ioManager.write(item + ",\n");
+            ioManager.write(item + "\n\n");
         }
-        ioManager.writeln("}");
         return true;
     }
 

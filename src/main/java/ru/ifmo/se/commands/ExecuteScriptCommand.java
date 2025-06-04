@@ -37,7 +37,7 @@ public class ExecuteScriptCommand extends Command {
      * @param history the set to track script execution history
      */
     public ExecuteScriptCommand(CollectionManager collectionManager, CommandManager commandManager, Set<String> history) {
-        super("Execute script", "исполняет скрипт из файла");
+        super("execute_script [name]", "исполняет скрипт из файла");
         this.collectionManager = collectionManager;
         this.commandManager = commandManager;
         this.history = history;

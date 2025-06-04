@@ -18,7 +18,7 @@ public class RemoveLastCommand extends Command {
      * @param collectionManager the collection manager to operate on
      */
     public RemoveLastCommand(CollectionManager collectionManager) {
-        super("remove last element", "удаляет последний элемент");
+        super("remove_last", "удаляет последний элемент");
         this.collectionManager = collectionManager;
     }
 

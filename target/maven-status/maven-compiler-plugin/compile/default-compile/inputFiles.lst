@@ -1,6 +1,7 @@
 /home/user/edu/itmo/prog/lab5/src/main/java/ru/ifmo/se/commands/AddCommand.java
 /home/user/edu/itmo/prog/lab5/src/main/java/ru/ifmo/se/commands/RemoveLastCommand.java
 /home/user/edu/itmo/prog/lab5/src/main/java/ru/ifmo/se/models/Coordinates.java
+/home/user/edu/itmo/prog/lab5/src/main/java/ru/ifmo/se/models/comporators/MusicBandNumberOfParticipantsComparator.java
 /home/user/edu/itmo/prog/lab5/src/main/java/ru/ifmo/se/commands/ExecuteScriptCommand.java
 /home/user/edu/itmo/prog/lab5/src/main/java/ru/ifmo/se/models/MusicBand.java
 /home/user/edu/itmo/prog/lab5/src/main/java/ru/ifmo/se/models/forms/FloatForm.java

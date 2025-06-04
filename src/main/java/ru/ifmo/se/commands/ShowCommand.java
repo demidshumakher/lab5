@@ -21,7 +21,7 @@ public class ShowCommand extends Command {
      * @param collectionManager the collection manager to use
      */
     public ShowCommand(CollectionManager collectionManager) {
-        super("show", "Выводит всю коллекцию");
+        super("show", "выводит все элементы коллекции");
         this.collectionManager = collectionManager;
     }
 
@@ -40,13 +40,10 @@ public class ShowCommand extends Command {
             throw new WrongAmountOfArguments();
         }
 
-        ioManager.write("Collection{ ");
-
         for (var item : this.collectionManager.getItems().toList()) {
-            ioManager.write(item + ",\n");
+            ioManager.write(item + "\n\n");
         }
 
-        ioManager.writeln("}");
         return true;
     }
 }

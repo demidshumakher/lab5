@@ -67,8 +67,11 @@ public class Runner {
                 }
             } catch (WrongAmountOfArguments e) {
                 ioManager.writeln("Неверное количество аргументов");
-            } catch (WrongInputException e) {
-                ioManager.writeln("Неверный ввод " + e.getMessage());
+            } catch (WrongInputException | IndexOutOfBoundsException e) {
+                ioManager.writeln("Неверный ввод: " + e.getMessage());
+            } catch (Exception e) {
+                ioManager.writeln("Ошибка: " + e.getMessage());
+                e.printStackTrace();
             }
         }
         throw new EOFException();

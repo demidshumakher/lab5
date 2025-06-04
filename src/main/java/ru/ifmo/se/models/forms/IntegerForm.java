@@ -1,5 +1,6 @@
 package ru.ifmo.se.models.forms;
 
+import com.thoughtworks.xstream.mapper.Mapper;
 import ru.ifmo.se.models.forms.validators.Validator;
 import ru.ifmo.se.utils.IOManagers.IOManager;
 
@@ -21,7 +22,7 @@ public class IntegerForm extends Form<Integer> {
         while (x.isEmpty()) {
             try {
                 x = Optional.of(Integer.parseInt(ioManager.readLine("Введите " + name + ": ")));
-            } catch (NumberFormatException e) {
+            } catch (NumberFormatException | NullPointerException e) {
                 ioManager.writeln("Число введено не верно");
                 continue;
             }

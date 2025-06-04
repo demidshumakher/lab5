@@ -16,6 +16,7 @@ ru/ifmo/se/utils/IOManagers/IOManager.class
 ru/ifmo/se/models/Location.class
 ru/ifmo/se/commands/HelpCommand.class
 ru/ifmo/se/models/forms/MusicBandForm.class
+ru/ifmo/se/models/comporators/MusicBandNumberOfParticipantsComparator.class
 ru/ifmo/se/models/Validatable.class
 ru/ifmo/se/models/forms/LocationForm.class
 ru/ifmo/se/commands/RemoveByIdCommand.class

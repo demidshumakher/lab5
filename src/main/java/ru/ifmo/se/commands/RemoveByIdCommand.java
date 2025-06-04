@@ -19,7 +19,7 @@ public class RemoveByIdCommand extends Command {
      * @param collectionManager the collection manager to operate on
      */
     public RemoveByIdCommand(CollectionManager collectionManager) {
-        super("remove by id", "удалить элемент из коллекции по id");
+        super("remove_by_id [id]", "удаляет элемент из коллекции по заданному id");
         this.collectionManager = collectionManager;
     }
 

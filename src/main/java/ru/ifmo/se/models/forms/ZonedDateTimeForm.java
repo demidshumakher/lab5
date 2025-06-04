@@ -23,7 +23,7 @@ public class ZonedDateTimeForm extends Form<ZonedDateTime> {
                 String birthdayStr = this.ioManager.readLine("Введите дату рождения (в формате: '2007-12-03 10:15'): ").replaceAll(" ", "T");
                 LocalDateTime localDateTime = LocalDateTime.parse(birthdayStr);
                 birthday = Optional.of(localDateTime.atZone(ZoneId.of("Europe/Moscow")));
-            } catch (DateTimeParseException e) {
+            } catch (DateTimeParseException | NullPointerException e) {
                 this.ioManager.writeln("Дата введена не корректно");
             }
         }

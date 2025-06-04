@@ -12,7 +12,7 @@ public class ExitCommand extends Command {
      * Constructs a new ExitCommand.
      */
     public ExitCommand() {
-        super("exit", "Завершение работы");
+        super("exit", "завершает работу");
     }
 
     /**

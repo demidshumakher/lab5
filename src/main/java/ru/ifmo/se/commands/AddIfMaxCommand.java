@@ -31,7 +31,7 @@ public class AddIfMaxCommand extends Command {
      * @param comparator the comparator to use for determining the maximum element
      */
     public AddIfMaxCommand(CollectionManager collectionManager, Comparator<MusicBand> comparator) {
-        super("add if max", "Добавляет элемент, если он максимальный");
+        super("add_if_max {element}", "Добавляет элемент, если он максимальный");
         this.collectionManager = collectionManager;
         this.comparator = comparator;
     }
@@ -54,12 +54,16 @@ public class AddIfMaxCommand extends Command {
         }
         MusicBand musicBand = new MusicBandForm(ioManager).get();
 
-        return null == collectionManager.getItems()
-                .filter(element -> new MusicBandCreationDateComparator().compare(element, musicBand) > 0)
+        var t = collectionManager.getItems()
+                .filter(element -> comparator.compare(element, musicBand) > 0)
                 .findFirst().orElseGet(() -> {
                     collectionManager.add(musicBand);
                     return null;
                 });
+        if (t != null) {
+            ioManager.writeln("Элемент не является максимальным");
+        }
+        return true;
     }
 
 

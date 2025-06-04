@@ -1,4 +1,225 @@
 <DB>
-  <collection/>
+  <collection>
+    <music__band>
+      <id>1</id>
+      <name>Solar Echoes</name>
+      <coordinates>
+        <x>42</x>
+        <y>-15.0</y>
+      </coordinates>
+      <creationDate>2025-06-03 23:01:43.124 UTC</creationDate>
+      <numberOfParticipants>5</numberOfParticipants>
+      <genre>POST_ROCK</genre>
+      <frontMan>
+        <name>Lila Moon</name>
+        <birthday>2000-01-15T08:30:00+03:00[Europe/Moscow]</birthday>
+        <passportID>93827465</passportID>
+        <eyeColor>BLUE</eyeColor>
+        <location>
+          <x>10.0</x>
+          <y>7.0</y>
+          <z>-3</z>
+        </location>
+      </frontMan>
+    </music__band>
+    <music__band>
+      <id>2</id>
+      <name>Crimson Wires</name>
+      <coordinates>
+        <x>-22</x>
+        <y>33.0</y>
+      </coordinates>
+      <creationDate>2025-06-03 23:01:43.126 UTC</creationDate>
+      <numberOfParticipants>4</numberOfParticipants>
+      <genre>ROCK</genre>
+      <frontMan>
+        <name>Jack Ronin</name>
+        <birthday>1995-11-02T12:00:00+03:00[Europe/Moscow]</birthday>
+        <passportID>12348765</passportID>
+        <eyeColor>RED</eyeColor>
+        <location>
+          <x>0.0</x>
+          <y>2.0</y>
+          <z>18</z>
+        </location>
+      </frontMan>
+    </music__band>
+    <music__band>
+      <id>3</id>
+      <name>Indigo Storm</name>
+      <coordinates>
+        <x>7</x>
+        <y>19.0</y>
+      </coordinates>
+      <creationDate>2025-06-03 23:01:43.128 UTC</creationDate>
+      <numberOfParticipants>6</numberOfParticipants>
+      <genre>JAZZ</genre>
+      <frontMan>
+        <name>Zoe Trent</name>
+        <birthday>2002-05-20T09:00:00+04:00[Europe/Moscow]</birthday>
+        <passportID>87654321</passportID>
+        <eyeColor>ORANGE</eyeColor>
+        <location>
+          <x>-4.0</x>
+          <y>11.0</y>
+          <z>3</z>
+        </location>
+      </frontMan>
+    </music__band>
+    <music__band>
+      <id>4</id>
+      <name>Velvet Revolt</name>
+      <coordinates>
+        <x>13</x>
+        <y>-8.0</y>
+      </coordinates>
+      <creationDate>2025-06-03 23:01:43.130 UTC</creationDate>
+      <numberOfParticipants>3</numberOfParticipants>
+      <genre>POST_PUNK</genre>
+      <frontMan>
+        <name>Nina Fox</name>
+        <birthday>2001-09-13T21:45:00+04:00[Europe/Moscow]</birthday>
+        <passportID>99887766</passportID>
+        <eyeColor>BLACK</eyeColor>
+        <location>
+          <x>3.0</x>
+          <y>3.0</y>
+          <z>3</z>
+        </location>
+      </frontMan>
+    </music__band>
+    <music__band>
+      <id>5</id>
+      <name>Electric Rain</name>
+      <coordinates>
+        <x>0</x>
+        <y>0.0</y>
+      </coordinates>
+      <creationDate>2025-06-03 23:01:43.131 UTC</creationDate>
+      <numberOfParticipants>4</numberOfParticipants>
+      <genre>ROCK</genre>
+      <frontMan>
+        <name>Max Ryder</name>
+        <birthday>1999-12-31T23:59:00+03:00[Europe/Moscow]</birthday>
+        <passportID>13467985</passportID>
+        <eyeColor>BLUE</eyeColor>
+        <location>
+          <x>-9.0</x>
+          <y>1.0</y>
+          <z>2</z>
+        </location>
+      </frontMan>
+    </music__band>
+    <music__band>
+      <id>6</id>
+      <name>Phantom Frequencies</name>
+      <coordinates>
+        <x>22</x>
+        <y>-22.0</y>
+      </coordinates>
+      <creationDate>2025-06-03 23:01:43.132 UTC</creationDate>
+      <numberOfParticipants>7</numberOfParticipants>
+      <genre>POST_ROCK</genre>
+      <frontMan>
+        <name>Kai Bloom</name>
+        <birthday>2003-03-03T03:33:00+03:00[Europe/Moscow]</birthday>
+        <passportID>11223344</passportID>
+        <eyeColor>RED</eyeColor>
+        <location>
+          <x>7.0</x>
+          <y>7.0</y>
+          <z>-7</z>
+        </location>
+      </frontMan>
+    </music__band>
+    <music__band>
+      <id>7</id>
+      <name>The Hollow Lights</name>
+      <coordinates>
+        <x>17</x>
+        <y>3.0</y>
+      </coordinates>
+      <creationDate>2025-06-03 23:01:43.133 UTC</creationDate>
+      <numberOfParticipants>5</numberOfParticipants>
+      <genre>POST_PUNK</genre>
+      <frontMan>
+        <name>Alice Grey</name>
+        <birthday>1998-07-07T17:30:00+04:00[Europe/Moscow]</birthday>
+        <passportID>56781234</passportID>
+        <eyeColor>BLACK</eyeColor>
+        <location>
+          <x>4.0</x>
+          <y>4.0</y>
+          <z>4</z>
+        </location>
+      </frontMan>
+    </music__band>
+    <music__band>
+      <id>8</id>
+      <name>Mercury Sleep</name>
+      <coordinates>
+        <x>-1</x>
+        <y>1.0</y>
+      </coordinates>
+      <creationDate>2025-06-03 23:01:43.135 UTC</creationDate>
+      <numberOfParticipants>6</numberOfParticipants>
+      <genre>JAZZ</genre>
+      <frontMan>
+        <name>Theo Bright</name>
+        <birthday>2004-06-21T14:10:00+04:00[Europe/Moscow]</birthday>
+        <passportID>88990077</passportID>
+        <eyeColor>ORANGE</eyeColor>
+        <location>
+          <x>12.0</x>
+          <y>-2.0</y>
+          <z>6</z>
+        </location>
+      </frontMan>
+    </music__band>
+    <music__band>
+      <id>9</id>
+      <name>Glass Comet</name>
+      <coordinates>
+        <x>5</x>
+        <y>-5.0</y>
+      </coordinates>
+      <creationDate>2025-06-03 23:01:43.136 UTC</creationDate>
+      <numberOfParticipants>4</numberOfParticipants>
+      <genre>ROCK</genre>
+      <frontMan>
+        <name>Eva Storm</name>
+        <birthday>1997-04-04T11:45:00+04:00[Europe/Moscow]</birthday>
+        <passportID>13579246</passportID>
+        <eyeColor>BLACK</eyeColor>
+        <location>
+          <x>9.0</x>
+          <y>9.0</y>
+          <z>0</z>
+        </location>
+      </frontMan>
+    </music__band>
+    <music__band>
+      <id>10</id>
+      <name>Neon Fog</name>
+      <coordinates>
+        <x>-12</x>
+        <y>8.0</y>
+      </coordinates>
+      <creationDate>2025-06-03 23:01:43.137 UTC</creationDate>
+      <numberOfParticipants>5</numberOfParticipants>
+      <genre>POST_PUNK</genre>
+      <frontMan>
+        <name>Ron Steel</name>
+        <birthday>1996-10-10T20:20:00+04:00[Europe/Moscow]</birthday>
+        <passportID>24681357</passportID>
+        <eyeColor>RED</eyeColor>
+        <location>
+          <x>-3.0</x>
+          <y>6.0</y>
+          <z>3</z>
+        </location>
+      </frontMan>
+    </music__band>
+  </collection>
   <initializationDate>2025-05-14T16:08:23.109916425</initializationDate>
 </DB>

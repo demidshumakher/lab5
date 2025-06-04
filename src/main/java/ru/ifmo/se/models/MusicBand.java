@@ -96,9 +96,9 @@ public class MusicBand implements Validatable {
 
     @Override
     public String toString() {
-        return "MusicBand{ id: " + id + ", name: " + name + ", coordinates: " + coordinates +
-                ", creationDate: " + creationDate + ", numberOfParticipants: " + numberOfParticipants +
-                ", genre: " + genre + ", frontMan: " + frontMan + "}";
+        return "MusicBand{\nid: " + id + ",\nname: " + name + ",\ncoordinates: " + coordinates +
+                ",\ncreationDate: " + creationDate + ",\nnumberOfParticipants: " + numberOfParticipants +
+                ",\ngenre: " + genre + ",\nfrontMan: " + frontMan + "\n}";
 
     }
 

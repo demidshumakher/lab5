@@ -22,7 +22,7 @@ public class CountByGenreCommand extends Command {
      * @param collectionManager the collection manager to operate on
      */
     public CountByGenreCommand(CollectionManager collectionManager) {
-        super("Count by genre", "возвращает количество групп по заданному жанру");
+        super("count_by_genre [genre]", "возвращает количество групп по заданному жанру");
         this.collectionManager = collectionManager;
     }
 

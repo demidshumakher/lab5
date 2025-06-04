@@ -24,7 +24,7 @@ public class AddCommand extends Command {
      * @param collectionManager the collection manager to operate on
      */
     public AddCommand(CollectionManager collectionManager) {
-        super("add", "добавить новый элемент в коллекцию");
+        super("add {element}", "добавляет новый элемент в коллекцию");
         this.collectionManager = collectionManager;
     }
 

@@ -18,7 +18,7 @@ public class RemoveAtIndexCommand extends Command {
      * @param collectionManger the collection manager to operate on
      */
     public RemoveAtIndexCommand(CollectionManager collectionManger) {
-        super("remove at index", "удаляет элемент с индексов");
+        super("remove_at [index]", "удаляет элемент по заданному индексу");
         this.collectionManager = collectionManger;
     }
 
@@ -42,7 +42,10 @@ public class RemoveAtIndexCommand extends Command {
         } catch (NumberFormatException e) {
             throw new WrongInputException("Число введено не верно");
         }
-        return this.collectionManager.removeAtIndex(index);
+
+        this.collectionManager.removeAtIndex(index);
+
+        return true;
     }
 
 }

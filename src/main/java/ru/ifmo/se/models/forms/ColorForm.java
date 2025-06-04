@@ -17,15 +17,19 @@ public class ColorForm extends Form<Color> {
     public Color get() throws IOException {
         Optional<Color> res = Optional.empty();
         while (res.isEmpty()) {
-            res = switch (this.ioManager.readLine("Введите цвет (red, black, blue, orange): ").toLowerCase()) {
-                case "red" -> Optional.of(Color.RED);
-                case "black" -> Optional.of(Color.BLACK);
-                case "blue" -> Optional.of(Color.BLUE);
-                case "orange" -> Optional.of(Color.ORANGE);
-                default -> Optional.empty();
-            };
-            if (res.isEmpty()) {
-                this.ioManager.writeln("Введен неизвестный цвет");
+            try {
+                res = switch (this.ioManager.readLine("Введите цвет (red, black, blue, orange): ").toLowerCase()) {
+                    case "red" -> Optional.of(Color.RED);
+                    case "black" -> Optional.of(Color.BLACK);
+                    case "blue" -> Optional.of(Color.BLUE);
+                    case "orange" -> Optional.of(Color.ORANGE);
+                    default -> Optional.empty();
+                };
+                if (res.isEmpty()) {
+                    this.ioManager.writeln("Введен неизвестный цвет");
+                }
+            } catch (NullPointerException e) {
+                this.ioManager.writeln("Цвет не может быть null");
             }
         }
 

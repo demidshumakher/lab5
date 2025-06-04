@@ -25,7 +25,7 @@ public class UpdateByIdCommand extends Command {
      * @param collectionManager the collection manager to operate on
      */
     public UpdateByIdCommand(CollectionManager collectionManager) {
-        super("update by id", "Обновляет элемент по id");
+        super("update [id] {element}", "обновляет элемент по id");
         this.collectionManager = collectionManager;
     }
 
@@ -50,6 +50,11 @@ public class UpdateByIdCommand extends Command {
         } catch (NumberFormatException e) {
             throw new WrongInputException("ID должен быть числом");
         }
+
+        if (!this.collectionManager.idExists(id)) {
+            throw new WrongInputException("ID не существует");
+        }
+
         MusicBand musicBand = new MusicBandForm(ioManager).get();
         return this.collectionManager.updateById(id, musicBand);
     }
