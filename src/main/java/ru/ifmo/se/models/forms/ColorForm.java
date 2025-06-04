@@ -30,6 +30,7 @@ public class ColorForm extends Form<Color> {
                 }
             } catch (NullPointerException e) {
                 this.ioManager.writeln("Цвет не может быть null");
+                e.printStackTrace();
             }
         }
 

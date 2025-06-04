@@ -23,6 +23,7 @@ public class LongForm extends Form<Long> {
                 x = Optional.of(Long.parseLong(ioManager.readLine("Введите " + name + ": ")));
             } catch (NumberFormatException | NullPointerException e) {
                 ioManager.writeln("Число введено не верно");
+                e.printStackTrace();
                 continue;
             }
             if (!this.check.isValid(x.get())) {

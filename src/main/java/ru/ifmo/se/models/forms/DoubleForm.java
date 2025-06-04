@@ -23,6 +23,7 @@ public class DoubleForm extends Form<Double> {
                 x = Optional.of(Double.parseDouble(ioManager.readLine("Введите " + name + ": ")));
             } catch (NumberFormatException | NullPointerException e) {
                 ioManager.writeln("Число введено не верно");
+                e.printStackTrace();
                 continue;
             }
 

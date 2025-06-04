@@ -30,6 +30,7 @@ public class MusicGenreForm extends Form<MusicGenre> {
                 }
             } catch (NullPointerException e) {
                 this.ioManager.writeln("Жанр не может быть null");
+                e.printStackTrace();
             }
         }
         return res.get();
