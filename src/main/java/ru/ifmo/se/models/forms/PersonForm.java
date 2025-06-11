@@ -19,7 +19,7 @@ public class PersonForm extends Form<Person> {
         this.ioManager.writeln("{Ввод персоны}");
 
         String name = new StringForm(ioManager, new StringLenghtValidor(0), "Имя").get();
-        String passportID = new StringForm(ioManager, new StringLenghtValidor(7), "номер паспорта (не менее 8 цифр)").get();
+        String passportID = new StringForm(ioManager, new StringLenghtValidor(7), "номер паспорта (не менее 8 символов)").get();
         Color eyeColor = new ColorForm(ioManager).get();
         Location location = new LocationForm(ioManager).get();
         ZonedDateTime birthday = new ZonedDateTimeForm(this.ioManager).get();
