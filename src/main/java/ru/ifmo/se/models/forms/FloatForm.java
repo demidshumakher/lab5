@@ -22,8 +22,7 @@ public class FloatForm extends Form<Float> {
             try {
                 x = Optional.of(Float.parseFloat(ioManager.readLine("Введите " + name + ": ")));
             } catch (NumberFormatException | NullPointerException e) {
-                ioManager.writeln("Число введено не верно");
-                e.printStackTrace();
+                ioManager.writeln("Число введено не верно\n" + e.getMessage() + "\n");
                 continue;
             }
 

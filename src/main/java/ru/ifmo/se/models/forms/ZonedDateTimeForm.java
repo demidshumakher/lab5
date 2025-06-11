@@ -24,7 +24,7 @@ public class ZonedDateTimeForm extends Form<ZonedDateTime> {
                 LocalDateTime localDateTime = LocalDateTime.parse(birthdayStr);
                 birthday = Optional.of(localDateTime.atZone(ZoneId.of("Europe/Moscow")));
             } catch (DateTimeParseException | NullPointerException e) {
-                this.ioManager.writeln("Дата введена не корректно");
+                this.ioManager.writeln("Дата введена не корректно\n" + e.getMessage() + "\n");
                 continue;
             }
             if (birthday.get().isAfter(ZonedDateTime.now())) {

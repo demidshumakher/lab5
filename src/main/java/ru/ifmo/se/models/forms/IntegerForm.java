@@ -23,8 +23,7 @@ public class IntegerForm extends Form<Integer> {
             try {
                 x = Optional.of(Integer.parseInt(ioManager.readLine("Введите " + name + ": ")));
             } catch (NumberFormatException | NullPointerException e) {
-                ioManager.writeln("Число введено не верно или превышает диапазоны integer");
-                e.printStackTrace();
+                ioManager.writeln("Число введено не верно или превышает диапазоны integer\n" + e.getMessage() + "\n");
                 continue;
             }
             if (!this.check.isValid(x.get())) {
