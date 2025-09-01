@@ -1,0 +1,11 @@
+ru.ifmo.se
+ru.ifmo.se.collectionManager
+ru.ifmo.se.commandManager
+ru.ifmo.se.commands
+ru.ifmo.se.exceptions
+ru.ifmo.se.models
+ru.ifmo.se.models.comporators
+ru.ifmo.se.models.forms
+ru.ifmo.se.models.forms.validators
+ru.ifmo.se.runner
+ru.ifmo.se.utils.IOManagers

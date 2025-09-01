@@ -1,0 +1,58 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+-classpath
+'/home/user/.m2/repository/com/thoughtworks/xstream/xstream/1.4.21/xstream-1.4.21.jar:/home/user/.m2/repository/io/github/x-stream/mxparser/1.2.2/mxparser-1.2.2.jar:/home/user/.m2/repository/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'21'
+-sourcepath
+'/home/user/edu/itmo/prog/lab5/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2025. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/user/edu/itmo/prog/lab5/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'lab5 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'lab5 1.0-SNAPSHOT API'
+ru.ifmo.se.runner
+ru.ifmo.se.commands
+ru.ifmo.se.collectionManager
+ru.ifmo.se.commandManager
+ru.ifmo.se.utils.IOManagers
+ru.ifmo.se
+ru.ifmo.se.exceptions
+ru.ifmo.se.models
+ru.ifmo.se.models.forms
+ru.ifmo.se.models.forms.validators
+ru.ifmo.se.models.comporators
+/home/user/.m2/repository/com/thoughtworks/xstream/xstream/1.4.21/xstream-1.4.21.jar = 1731006904000
+/home/user/.m2/repository/io/github/x-stream/mxparser/1.2.2/mxparser-1.2.2.jar = 1629326154000
+/home/user/.m2/repository/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar = 1055808238000
+/home/user/edu/itmo/prog/lab5/src/main/java = 1743549124959
+/home/user/edu/itmo/prog/lab5/target/reports/apidocs/module-search-index.js = 1749642098597
+/home/user/edu/itmo/prog/lab5/target/reports/apidocs/serialized-form.html = 1749642098477
+/home/user/edu/itmo/prog/lab5/target/reports/apidocs/member-search-index.js = 1749642098597
+/home/user/edu/itmo/prog/lab5/target/reports/apidocs/element-list = 1749642098423
+/home/user/edu/itmo/prog/lab5/target/reports/apidocs/help-doc.html = 1749642098640
+/home/user/edu/itmo/prog/lab5/target/reports/apidocs/search.html = 1749642098629
+/home/user/edu/itmo/prog/lab5/target/reports/apidocs/package-search-index.js = 1749642098597
+/home/user/edu/itmo/prog/lab5/target/reports/apidocs/allclasses-index.html = 1749642098597
+/home/user/edu/itmo/prog/lab5/target/reports/apidocs/overview-summary.html = 1749642098629
+/home/user/edu/itmo/prog/lab5/target/reports/apidocs/overview-tree.html = 1749642098575
+/home/user/edu/itmo/prog/lab5/target/reports/apidocs/index-all.html = 1749642098629
+/home/user/edu/itmo/prog/lab5/target/reports/apidocs/allpackages-index.html = 1749642098597
+/home/user/edu/itmo/prog/lab5/target/reports/apidocs/type-search-index.js = 1749642098597
+/home/user/edu/itmo/prog/lab5/target/reports/apidocs/tag-search-index.js = 1749642098597
+/home/user/edu/itmo/prog/lab5/target/reports/apidocs/index.html = 1749642098586
