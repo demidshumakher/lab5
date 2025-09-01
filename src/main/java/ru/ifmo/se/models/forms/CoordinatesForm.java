@@ -8,6 +8,9 @@ import ru.ifmo.se.utils.IOManagers.IOManager;
 
 import java.io.IOException;
 
+/**
+ * Форма для координат
+ */
 public class CoordinatesForm extends Form<Coordinates> {
 
     public CoordinatesForm(IOManager ioManager) {

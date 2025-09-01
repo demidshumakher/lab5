@@ -7,7 +7,9 @@ import ru.ifmo.se.utils.IOManagers.IOManager;
 import java.io.IOException;
 import java.util.Optional;
 
-
+/**
+ * Форма ввода для цвета
+ */
 public class ColorForm extends Form<Color> {
 
     public ColorForm(IOManager ioManager) {

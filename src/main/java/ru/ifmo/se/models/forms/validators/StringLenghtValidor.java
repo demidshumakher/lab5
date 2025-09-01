@@ -1,5 +1,8 @@
 package ru.ifmo.se.models.forms.validators;
 
+/**
+ * Валидатор, который проверяет строку на размер
+ */
 public class StringLenghtValidor extends NotNullValidator<String> {
     private final int length;
     public StringLenghtValidor(int length){

@@ -8,6 +8,9 @@ import java.io.IOException;
 import java.util.Optional;
 
 
+/**
+ * Форма для integer
+ */
 public class IntegerForm extends Form<Integer> {
     Validator<Integer> check;
     String name;

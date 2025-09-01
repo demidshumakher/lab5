@@ -10,6 +10,10 @@ import ru.ifmo.se.utils.IOManagers.IOManager;
 import java.io.IOException;
 import java.time.ZonedDateTime;
 
+
+/**
+ * Форма для человека
+ */
 public class PersonForm extends Form<Person> {
     public PersonForm(IOManager ioManager) {
         super(ioManager);

@@ -1,5 +1,8 @@
 package ru.ifmo.se.models.forms.validators;
 
+/**
+ * Валидатор, который проверяет на не равенство null
+ */
 public class NotNullValidator<T> implements Validator<T>{
     public NotNullValidator(){}
 

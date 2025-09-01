@@ -5,6 +5,10 @@ import ru.ifmo.se.utils.IOManagers.IOManager;
 
 import java.io.IOException;
 
+
+/**
+ * Абстрактный класс формы
+ */
 public abstract class Form<T> {
     protected IOManager ioManager;
 

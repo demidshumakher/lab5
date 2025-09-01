@@ -7,6 +7,9 @@ import java.io.IOException;
 import java.util.Optional;
 
 
+/**
+ * Форма для long
+ */
 public class LongForm extends Form<Long> {
     Validator<Long> check;
     String name;

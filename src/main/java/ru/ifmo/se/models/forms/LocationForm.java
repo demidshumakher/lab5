@@ -7,6 +7,10 @@ import ru.ifmo.se.utils.IOManagers.IOManager;
 
 import java.io.IOException;
 
+
+/**
+ * Форма для локации
+ */
 public class LocationForm extends Form<Location> {
     public LocationForm(IOManager ioManager) {
         super(ioManager);

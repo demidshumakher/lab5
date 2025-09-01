@@ -7,6 +7,9 @@ import java.io.IOException;
 import java.util.Optional;
 
 
+/**
+ * Форма для Float
+ */
 public class FloatForm extends Form<Float> {
     Validator<Float> check;
     String name;

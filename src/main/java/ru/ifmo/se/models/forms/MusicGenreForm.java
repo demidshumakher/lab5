@@ -8,6 +8,10 @@ import ru.ifmo.se.utils.IOManagers.IOManager;
 import java.io.IOException;
 import java.util.Optional;
 
+
+/**
+ * Форма для музыкального жанра
+ */
 public class MusicGenreForm extends Form<MusicGenre> {
 
     public MusicGenreForm(IOManager ioManager) {

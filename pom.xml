@@ -26,6 +26,18 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.4.1</version>
+                <configuration>
+                    <source>21</source> <!-- версия Java -->
+                    <encoding>UTF-8</encoding>
+                    <show>private</show> <!-- включить private методы -->
+                </configuration>
+            </plugin>
+
+
             <!-- Компилятор -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

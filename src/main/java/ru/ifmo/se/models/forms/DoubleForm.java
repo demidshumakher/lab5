@@ -7,6 +7,9 @@ import java.io.IOException;
 import java.util.Optional;
 
 
+/**
+ * Форма для Double
+ */
 public class DoubleForm extends Form<Double> {
     Validator<Double> check;
     String name;

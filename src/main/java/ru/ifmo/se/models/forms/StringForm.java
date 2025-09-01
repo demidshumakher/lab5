@@ -7,6 +7,9 @@ import java.io.IOException;
 import java.util.Optional;
 
 
+/**
+ * Форма для строки
+ */
 public class StringForm extends Form<String> {
     Validator<String> check;
     String name;

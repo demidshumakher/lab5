@@ -1,5 +1,8 @@
 package ru.ifmo.se.models.forms.validators;
 
+/**
+ * Валидатор, который проверяет, что число больше
+ */
 public class NumberGreaterValidator<T extends Number> extends NotNullValidator<T> {
     private final T value;
     public NumberGreaterValidator(T value){

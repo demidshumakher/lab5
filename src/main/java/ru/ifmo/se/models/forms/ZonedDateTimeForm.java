@@ -9,6 +9,10 @@ import java.time.ZonedDateTime;
 import java.time.format.DateTimeParseException;
 import java.util.Optional;
 
+
+/**
+ * Форма для даты
+ */
 public class ZonedDateTimeForm extends Form<ZonedDateTime> {
     ZonedDateTimeForm(IOManager ioManager) {
         super(ioManager);

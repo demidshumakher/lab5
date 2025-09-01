@@ -13,6 +13,10 @@ import javax.imageio.IIOException;
 import java.io.IOException;
 import java.util.Date;
 
+
+/**
+ * Форма для музыкальной банды
+ */
 public class MusicBandForm extends Form<MusicBand> {
     public MusicBandForm(IOManager ioManager) {
         super(ioManager);
